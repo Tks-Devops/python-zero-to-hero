@@ -1,0 +1,164 @@
+String in Python
+
+A string is a sequence of characters enclosed in quotes.
+
+str1 = "Tulasi"
+1) Indexing
+
+Access individual characters using index numbers.
+
+Forward Indexing
+
+Starts from 0
+
+T  u  l  a  s  i
+0  1  2  3  4  5
+
+Example:
+
+str1[3]
+
+Output:
+
+'a'
+2) Negative Indexing
+
+Starts from -1
+
+T   u   l   a   s   i
+-6 -5 -4 -3 -2 -1
+
+Example:
+
+str1[-1]
+
+Output:
+
+'i'
+3) Length of String
+
+Use len() to find total characters.
+
+len(str1)
+
+Output:
+
+6
+String Functions
+find()
+
+Returns index if character exists, otherwise returns -1
+
+str1.find("a")
+
+Output:
+
+3
+
+Character not present:
+
+str1.find("k")
+
+Output:
+
+-1
+split()
+
+Breaks string into list of words.
+
+text = "hello tulasi"
+text.split()
+
+Output:
+
+['hello', 'tulasi']
+
+Used heavily in text processing/NLP.
+
+replace()
+
+Replaces one word with another.
+
+text.replace("tulasi","python")
+
+Output:
+
+'hello python'
+
+Original string remains same unless reassigned.
+
+count()
+
+Counts occurrences of character.
+
+str2 = "Tulasi kumar sahu"
+str2.count("a")
+Case Sensitive
+str2.count("T")
+str2.count("t")
+
+Both are treated differently.
+
+Case Conversion Functions
+lower()
+
+Converts all characters to lowercase
+
+str2.lower()
+upper()
+
+Converts all characters to uppercase
+
+str2.upper()
+swapcase()
+
+Lower → Upper
+Upper → Lower
+
+str2.swapcase()
+title()
+
+Capitalizes first letter of every word
+
+str3.title()
+capitalize()
+
+Capitalizes only first letter of full sentence
+
+str3.capitalize()
+String Slicing
+
+Syntax:
+
+string[start:end:step]
+Normal slicing
+str1[0:3]
+
+Output:
+
+'Tul'
+
+End index is not included.
+
+Skip characters
+str1[0:6:2]
+
+Output:
+
+'Tls'
+
+Shortcut:
+
+str1[::2]
+Reverse String
+str1[::-1]
+
+Output:
+
+'isaluT'
+Partial Reverse
+str1[:1:-1]
+
+Output:
+
+'isa'
